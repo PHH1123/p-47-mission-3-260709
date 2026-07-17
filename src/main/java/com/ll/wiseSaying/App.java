@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class App {
 
-    public static void run() {
+    public static void run(Scanner sc) {
 
-        Scanner sc = new Scanner(System.in);
         FileIO fileIO = new FileIO();
         WiseSayingRepository repository = new WiseSayingRepository(fileIO);
         WiseSayingService service = new WiseSayingService(repository);
